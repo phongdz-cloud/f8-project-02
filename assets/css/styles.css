@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-color: #fff9e8;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -35,10 +39,8 @@ a {
 /* Navbar */
 
 .fixed-header {
-    /* margin: 36px 135px 135px 0px; */
     padding-top: 36px;
     background-color: #fffcf4;
-    /* background-color: red; */
 }
 
 .fixed-header .content {
@@ -103,6 +105,99 @@ a {
     margin-right: auto;
 }
 
+.hero-wrap .content .hero-content {
+    position: relative;
+    margin-bottom: 65px;
+    max-width: calc(100% -48px);
+}
+
+.hero-wrap .content .hero-content .hero-info {
+    width: 270px;
+    height: 244px;
+    position: absolute;
+    background: #ffffff;
+    top: 57%;
+    left: 70%;
+    border-radius: 12px;
+}
+
+.hero-wrap .content .hero-content .hero-info .hero-info-content {
+    display: flex;
+    margin-top: 14px;
+    margin-left: 24px;
+}
+
+.hero-wrap .content .hero-content .hero-info .hero-info-content:first-child {
+    margin-top: 24px;
+}
+
+.hero-wrap
+    .content
+    .hero-content
+    .hero-info
+    .hero-info-content
+    .hero-info-image {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-wrap .content .hero-content .hero-info .hero-info-content {
+    display: flex;
+    align-items: center;
+}
+
+.hero-wrap
+    .content
+    .hero-content
+    .hero-info
+    .hero-info-content
+    .hero-info-content-detail {
+    margin-left: 16px;
+}
+
+.hero-wrap
+    .content
+    .hero-content
+    .hero-info
+    .hero-info-content
+    .hero-info-content-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-wrap
+    .content
+    .hero-content
+    .hero-info
+    .hero-info-content
+    .hero-info-content-detail
+    .total {
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+}
+
+.hero-wrap
+    .content
+    .hero-content
+    .hero-info
+    .hero-info-content
+    .hero-info-content-detail
+    .title {
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+}
+
 .hero-wrap .hero-img {
     width: 470px;
     object-fit: cover;
@@ -126,4 +221,229 @@ a {
     font-weight: 400;
     line-height: 30px;
     color: #5f5b53;
+}
+
+.hero-wrap .content .course {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.hero-wrap .content .course .btn-course {
+    background-color: #ffb900;
+    width: 180px;
+    height: 64px;
+    border-radius: 32px;
+    padding: 17px 33px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+}
+
+.hero-wrap .content .course .play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-wrap .content .course .play .play-img {
+    display: block;
+    border-radius: 50%;
+    padding: 14px 15px;
+    background-color: #ffffff;
+}
+
+.hero-wrap .content .course .play .watch-video {
+    margin-left: 14px;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+}
+
+.hero-wrap .content .recent-engagement {
+    margin-top: 48px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+}
+
+.hero-wrap .content .static {
+    margin-top: 8px;
+}
+
+.static-course {
+    margin-bottom: 15px;
+}
+
+.hero-wrap .content .static {
+    display: flex;
+    gap: 28px;
+}
+
+.hero-wrap .content .static .static-course .total {
+    font-family: "Sen", sans-serif;
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0em;
+}
+
+.hero-wrap .content .static .static-course .total .desc {
+    margin-left: 10px;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+}
+
+/* Static course */
+.static-popular {
+    margin-top: 100px;
+}
+
+.popular-courses {
+    width: 1170px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.popular-courses .popular-courses-detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.popular-courses .content .title {
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+}
+
+.popular-courses .content .desc {
+    margin-top: 16px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 30px;
+    width: 458px;
+    letter-spacing: 0em;
+}
+
+.popular-courses .content-direction {
+    display: flex;
+    /* margin-right: 60px; */
+    gap: 16px;
+}
+
+.popular-courses .content-direction img {
+    padding: 12px 15px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ffffff;
+    border-style: solid;
+    border-color: #ffb900;
+    border-width: 1px;
+}
+
+.popular-card {
+    margin: 0 167px;
+}
+
+.popular-card .content {
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.popular-card .content-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.popular-card .card-content {
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0px 18px 36px 0px #0000000d;
+    height: 450px;
+}
+
+.popular-card .card-content .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 22px;
+}
+
+.popular-card .card-content .card-img {
+    width: 370px;
+    height: 278px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.card-content .content-stat {
+    display: flex;
+    gap: 5px;
+}
+
+.card-content .content-stat .total {
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    color: #fea31b;
+}
+
+.popular-card .content-detail .title {
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+}
+
+.card-content .desc {
+    font-family: Poppins;
+    width: 326px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    margin-left: 16px;
+}
+
+.card-content .detail-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-content .detail-price .price {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 26px;
+    margin-left: 22px;
+    letter-spacing: 0em;
+}
+
+.card-content .detail-price a {
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-right: 22px;
+    background: #ffb900;
+    padding: 19px 37px;
 }
