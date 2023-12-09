@@ -452,7 +452,6 @@ a {
 .quote {
     margin-top: 200px;
     background-color: #2e2100;
-    /* height: 380px; */
 }
 
 .quote .content {
@@ -525,4 +524,74 @@ a {
     position: absolute;
     top: -24px;
     left: -29px;
+}
+
+/* platform */
+.platform {
+    margin-top: 200px;
+}
+
+.platform .content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 130px;
+}
+
+.platform .platform-img {
+    display: flex;
+    gap: 30px;
+}
+
+.platform .platform-img img {
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.platform .platform-img img:first-child {
+    margin-top: 34px;
+}
+
+.platform .platform-content .title {
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    color: #171100;
+    margin-top: 58px;
+}
+
+.platform .platform-content .desc {
+    margin-top: 16px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 28px;
+    color: #5f5b53;
+}
+
+.platform .platform-content .desc-year {
+    margin-top: 16px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    color: #5f5b53;
+}
+
+.platform .platform-content .btn {
+    background-color: #ffb900;
+    margin-top: 32px;
+    border-radius: 26px;
+}
+
+.platform .platform-content .a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
 }
