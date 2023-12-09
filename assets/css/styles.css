@@ -447,3 +447,82 @@ a {
     background: #ffb900;
     padding: 19px 37px;
 }
+
+/* quote */
+.quote {
+    margin-top: 200px;
+    background-color: #2e2100;
+    /* height: 380px; */
+}
+
+.quote .content {
+    width: 1170px;
+    height: 380px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    gap: 240px;
+}
+
+.quote .user-quote img {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.quote .user-quote .username {
+    font-family: Sen;
+    margin-top: 18px;
+    min-width: 150px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 34px;
+    color: #f7f7f7;
+}
+
+.quote .user-quote .desc {
+    font-size: 1.4rem;
+    margin-top: 4px;
+    min-width: 180px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #bfbcb2;
+}
+
+.quote .user-quote .circle {
+    display: flex;
+    margin-top: 28px;
+    gap: 6px;
+}
+
+.quote .user-quote .circle .circle-loop {
+    width: 6px;
+    height: 6px;
+    background-color: #634700;
+    border-radius: 50%;
+}
+
+.quote .user-quote .circle .circle-loop:nth-child(2) {
+    background-color: #ffb900;
+}
+
+.quote .content .content-quote {
+    position: relative;
+}
+
+.quote .content .content-quote p {
+    font-size: 2.8rem;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 40px;
+    letter-spacing: 0em;
+    color: #ffffff;
+}
+
+.quote .content .content-quote img {
+    position: absolute;
+    top: -24px;
+    left: -29px;
+}
